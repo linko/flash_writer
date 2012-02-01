@@ -1,14 +1,20 @@
 <h1>Flash writer for Linux</h1>
-
-Technologies
-	* C++
-	* QT 4.7
-	* POSIX
-
-This program helps you write data to many media devices 
-	* Mount/unmount
-	* Format (in this version available only FAT32)
-	* Copy selected data 
-	* Save logs
-	
 The main purpose of the program - the simultaneous recording of the large number of flash drives, connected via hub
+
+<h4>Technologies</h4>
+<ul>
+	<li>C++</li>
+	<li>QT 4.7</li>
+	<li>POSIX</li>
+</ul>
+
+
+<h4>This program helps you with:</h4>
+<ul>
+	<li>Mount/unmount</li>
+	<li>Format (in this version available only FAT32)</li>
+	<li>Copy selected data </li>
+</ul>
+
+	
+
