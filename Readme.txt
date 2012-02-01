@@ -1,6 +1,7 @@
-<h1>Flash writer for Linux</h1>
+Flash writer for Linux
 
 Technologies
+	* C++
 	* QT 4.7
 	* POSIX
 
