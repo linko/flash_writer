@@ -1,0 +1,120 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'main.cpp'
+**
+** Created: Sat Feb 19 22:59:22 2011
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'main.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 62
+#error "This file was generated using the moc from 4.7.0. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_FileDialog[] = {
+
+ // content:
+       5,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      17,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      12,   11,   11,   11, 0x08,
+      41,   11,   11,   11, 0x08,
+      75,   11,   11,   11, 0x08,
+     105,   11,   11,   11, 0x08,
+     140,   11,   11,   11, 0x08,
+     152,   11,   11,   11, 0x08,
+     170,  165,   11,   11, 0x08,
+     193,  187,   11,   11, 0x08,
+     227,   11,   11,   11, 0x08,
+     240,   11,   11,   11, 0x08,
+     255,   11,   11,   11, 0x08,
+     264,   11,   11,   11, 0x08,
+     284,   11,   11,   11, 0x08,
+     300,   11,   11,   11, 0x08,
+     315,   11,   11,   11, 0x08,
+     335,   11,   11,   11, 0x08,
+     356,   11,   11,   11, 0x08,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_FileDialog[] = {
+    "FileDialog\0\0on_uncheckAllMount_clicked()\0"
+    "on_selectAllMountButton_clicked()\0"
+    "on_uncheckAllUmount_clicked()\0"
+    "on_selectAllUmountButton_clicked()\0"
+    "copyFiles()\0setButtons()\0idle\0"
+    "setButtons(bool)\0state\0"
+    "stateChanged(QtFileCopier::State)\0"
+    "openFolder()\0getMediaList()\0format()\0"
+    "makeAllByOneClick()\0formatAndCopy()\0"
+    "clearLogArea()\0mountSelectedDevs()\0"
+    "umountSelectedDevs()\0unmountAllAndClose()\0"
+};
+
+const QMetaObject FileDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_FileDialog,
+      qt_meta_data_FileDialog, 0 }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &FileDialog::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *FileDialog::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *FileDialog::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_FileDialog))
+        return static_cast<void*>(const_cast< FileDialog*>(this));
+    return QDialog::qt_metacast(_clname);
+}
+
+int FileDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: on_uncheckAllMount_clicked(); break;
+        case 1: on_selectAllMountButton_clicked(); break;
+        case 2: on_uncheckAllUmount_clicked(); break;
+        case 3: on_selectAllUmountButton_clicked(); break;
+        case 4: copyFiles(); break;
+        case 5: setButtons(); break;
+        case 6: setButtons((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 7: stateChanged((*reinterpret_cast< QtFileCopier::State(*)>(_a[1]))); break;
+        case 8: openFolder(); break;
+        case 9: getMediaList(); break;
+        case 10: format(); break;
+        case 11: makeAllByOneClick(); break;
+        case 12: formatAndCopy(); break;
+        case 13: clearLogArea(); break;
+        case 14: mountSelectedDevs(); break;
+        case 15: umountSelectedDevs(); break;
+        case 16: unmountAllAndClose(); break;
+        default: ;
+        }
+        _id -= 17;
+    }
+    return _id;
+}
+QT_END_MOC_NAMESPACE

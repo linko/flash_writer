@@ -1,0 +1,160 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'qtfilecopier.cpp'
+**
+** Created: Sat Feb 19 22:59:20 2011
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'qtfilecopier.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 62
+#error "This file was generated using the moc from 4.7.0. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_QtCopyThread[] = {
+
+ // content:
+       5,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      19,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       5,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      31,   14,   13,   13, 0x05,
+      70,   67,   13,   13, 0x05,
+      95,   83,   13,   13, 0x05,
+     137,  128,   13,   13, 0x05,
+     156,   13,   13,   13, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+     167,   13,   13,   13, 0x0a,
+     188,  177,   13,   13, 0x0a,
+     219,  210,   13,   13, 0x0a,
+     247,   13,   13,   13, 0x0a,
+     256,   67,   13,   13, 0x0a,
+     268,   13,   13,   13, 0x0a,
+     275,   13,   13,   13, 0x0a,
+     285,   13,   13,   13, 0x0a,
+     293,   13,   13,   13, 0x0a,
+     305,   13,   13,   13, 0x0a,
+     320,   13,   13,   13, 0x0a,
+     337,   13,   13,   13, 0x0a,
+     349,   13,   13,   13, 0x0a,
+     360,   13,   13,   13, 0x09,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_QtCopyThread[] = {
+    "QtCopyThread\0\0id,error,stopped\0"
+    "error(int,QtFileCopier::Error,bool)\0"
+    "id\0started(int)\0id,progress\0"
+    "dataTransferProgress(int,qint64)\0"
+    "id,error\0finished(int,bool)\0canceled()\0"
+    "restart()\0id,request\0copy(int,CopyRequest)\0"
+    "requests\0copy(QMap<int,CopyRequest>)\0"
+    "cancel()\0cancel(int)\0skip()\0skipAll()\0"
+    "retry()\0overwrite()\0overwriteAll()\0"
+    "resetOverwrite()\0resetSkip()\0progress()\0"
+    "copierDestroyed()\0"
+};
+
+const QMetaObject QtCopyThread::staticMetaObject = {
+    { &QThread::staticMetaObject, qt_meta_stringdata_QtCopyThread,
+      qt_meta_data_QtCopyThread, 0 }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &QtCopyThread::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *QtCopyThread::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *QtCopyThread::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_QtCopyThread))
+        return static_cast<void*>(const_cast< QtCopyThread*>(this));
+    return QThread::qt_metacast(_clname);
+}
+
+int QtCopyThread::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QThread::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: error((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< QtFileCopier::Error(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3]))); break;
+        case 1: started((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: dataTransferProgress((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< qint64(*)>(_a[2]))); break;
+        case 3: finished((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
+        case 4: canceled(); break;
+        case 5: restart(); break;
+        case 6: copy((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< const CopyRequest(*)>(_a[2]))); break;
+        case 7: copy((*reinterpret_cast< const QMap<int,CopyRequest>(*)>(_a[1]))); break;
+        case 8: cancel(); break;
+        case 9: cancel((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 10: skip(); break;
+        case 11: skipAll(); break;
+        case 12: retry(); break;
+        case 13: overwrite(); break;
+        case 14: overwriteAll(); break;
+        case 15: resetOverwrite(); break;
+        case 16: resetSkip(); break;
+        case 17: progress(); break;
+        case 18: copierDestroyed(); break;
+        default: ;
+        }
+        _id -= 19;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void QtCopyThread::error(int _t1, QtFileCopier::Error _t2, bool _t3)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void QtCopyThread::started(int _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void QtCopyThread::dataTransferProgress(int _t1, qint64 _t2)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
+}
+
+// SIGNAL 3
+void QtCopyThread::finished(int _t1, bool _t2)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    QMetaObject::activate(this, &staticMetaObject, 3, _a);
+}
+
+// SIGNAL 4
+void QtCopyThread::canceled()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, 0);
+}
+QT_END_MOC_NAMESPACE
